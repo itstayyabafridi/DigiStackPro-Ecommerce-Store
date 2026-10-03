@@ -1,0 +1,18 @@
+
+.form { display:flex; flex-direction:column; gap:24px; }
+.field { display:flex; flex-direction:column; gap:10px; font-size:16px; color:#141614; }
+.input { height:58px; border:1px solid #343632; border-radius:3px; background:transparent; color:#141614; padding:0 20px; font-size:16px; box-shadow:none; }
+.input::placeholder { color:#737780; }
+.input:focus-visible { outline:2px solid #34791c; outline-offset:3px; box-shadow:none; }
+.input:-webkit-autofill { -webkit-text-fill-color:#141614; box-shadow:0 0 0 100px #fff8f1 inset; }
+.submit { height:60px; width:100%; margin-top:8px; border-radius:4px; background:#a5f33b; color:#10140c; font-size:18px; font-weight:650; box-shadow:none; gap:20px; }
+.submit:hover { background:#94e329; }
+.submit:active { background:#87d422; }
+.form :where(button,a):focus-visible { outline:2px solid #34791c; outline-offset:4px; }
+.form :disabled { opacity:.55; cursor:wait; }
+.reveal { position:absolute; top:0; right:0; height:100%; width:52px; display:grid; place-items:center; color:#171a16; cursor:pointer; }
+.forgot { text-align:center; text-decoration:underline; text-underline-offset:3px; margin-top:4px; }
+.resend { align-self:center; color:#30352b; }
+.message { text-align:center; font-size:14px; color:#5e635a; }
+.message:empty { display:none; }
+.error { color:#ad261c; }
